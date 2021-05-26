@@ -8,20 +8,22 @@ import './Footer.css'
 class Footer extends React.Component {
     render() {
         return (
-            <div className='footer-container'>
+            <div >
+                <footer className='footer-container'>
                 <p>Created by Caitlin Greer</p>
-                <ul>
-                    <li>
-                        <a href='https://github.com/CaitlinGreer'>
-                            <FontAwesomeIcon icon={faGithubSquare} className='github' />
-                        </a>
-                    </li>
-                    <li>
-                        <a href='https://www.linkedin.com/in/caitlingreer/'>
-                            <FontAwesomeIcon icon={faLinkedin} className='linked-in' />
-                        </a>
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            <a href='https://github.com/CaitlinGreer'>
+                                <FontAwesomeIcon icon={faGithubSquare} className='github' />
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://www.linkedin.com/in/caitlingreer/'>
+                                <FontAwesomeIcon icon={faLinkedin} className='linked-in' />
+                            </a>
+                        </li>
+                    </ul>
+                </footer>
             </div>
         )
     }
