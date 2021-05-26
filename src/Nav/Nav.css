@@ -1,0 +1,33 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+
+  }
+  
+  .nav-link-header {
+    align-self: start;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    white-space: nowrap;
+    
+}
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 15px;
+    padding-right: 8px;
+  }
+  
+  a {
+    text-decoration: none;
+    padding-left: 5px;
+  }

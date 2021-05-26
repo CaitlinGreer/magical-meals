@@ -4,6 +4,9 @@
     align-content: center;
     background-color: #000;
     color: white;   
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-container p {

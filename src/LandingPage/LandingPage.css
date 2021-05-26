@@ -1,0 +1,22 @@
+.home-page-container{
+    background-color: lightblue;
+}
+
+.main-page-container, .welcome-info {
+    padding: 5px;
+    background-color: white;
+}
+
+.welcome-info {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 5%;
+    margin-top: 55px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+}
+
+h3 {
+    font-size: 25px;
+}
