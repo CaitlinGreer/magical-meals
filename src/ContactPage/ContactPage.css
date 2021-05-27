@@ -1,0 +1,17 @@
+.contact-container {
+    margin-top: 15%;
+}
+
+.contact-subinfo {
+    border: 1px solid transparent;
+    background-color: lightblue;
+    padding: 2%;
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.contact-form-link {
+    text-align: center;
+}
