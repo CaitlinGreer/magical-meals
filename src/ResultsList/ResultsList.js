@@ -7,7 +7,7 @@ class ResultsList extends Component {
     render() {
         const meals = DummyMeals.map(meal => {
             return (
-                <ResultCard 
+               <ResultCard 
                     key={meal.id} 
                     meal_name={meal.meal_name}
                     description={meal.meal_description}
@@ -17,7 +17,7 @@ class ResultsList extends Component {
                     vegan={meal.vegan}
                     vegetarian={meal.vegetarian}
                     gluten_free={meal.gluten_free}
-                />
+                />     
             )
         })
         return (
