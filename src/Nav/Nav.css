@@ -27,7 +27,9 @@
     padding-right: 8px;
   }
   
-  a {
+  a, a:hover, a:visited {
     text-decoration: none;
-    padding-left: 5px;
+    padding-left: 15px;
+    color: white;
   }
+

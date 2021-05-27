@@ -1,7 +1,7 @@
 .contact-form-container {
     display: flex;
     flex-direction: column;
-    margin-top: 1%;
+    margin-bottom: 5%;
 }
 
 .contact-form-fieldset {
@@ -27,9 +27,19 @@
     align-items: space-between;
 }
 
+.park-options {
+    padding: 5px;
+}
 .submit-button {
     padding: 1%;
     margin-top: 2%;
     margin-left: 15%;
     margin-right: 15%;
+}
+
+.contact-form-link {
+    background-color: black;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 1%;
 }
