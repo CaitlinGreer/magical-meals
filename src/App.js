@@ -4,6 +4,8 @@ import { Route, Switch } from 'react-router-dom'
 import Nav from './Nav/Nav'
 import LandingPage from './LandingPage/LandingPage'
 import FindAMeal from './FindAMeal/FindAMeal'
+import ContactPage from './ContactPage/ContactPage'
+import ContactForm from './ContactForm/ContactForm'
 
 class App extends Component  {
   
@@ -20,11 +22,14 @@ class App extends Component  {
               path='/find-meal'
               component={FindAMeal}
           />
-          {/* 
           <Route
-              path='/jokes-list'
-              component={JokesList}
-          /> */}
+              path='/contact'
+              component={ContactPage}
+          />
+          <Route 
+              path='/contact-form'
+              component={ContactForm}
+          />
         </Switch>
       </div>
     );
