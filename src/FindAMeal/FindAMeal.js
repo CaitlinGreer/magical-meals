@@ -4,11 +4,13 @@ import './FindAMeal.css'
 import ResultsList from '../ResultsList/ResultsList'
 
 class FindAMeal extends Component {
+
     render() {
         return (
             <div className='find-a-meal-container'>
                 <div className='filter'>
                     <h1 className='page-heading'>Find Your Meal</h1>
+                    <h2>Choose Your Location To Get Started</h2>
                        <form className='search-form'>
                             <label htmlFor='location'>What park are you in?</label>
                             <div className='options-button'>
