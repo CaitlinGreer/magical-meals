@@ -28,13 +28,13 @@ class ContactForm extends Component {
                                     >    
                                 </input>
                                 <label htmlFor='meal' className='text-input-label'>Location:</label>
-                                <input
-                                    className='text-input' 
-                                    type='text' 
-                                    name='meal'
-                                    placeholder='What park is it at?'
-                                    >    
-                                </input>
+                                <select className='park-options'>
+                                    <option value='select-one' defaultValue>Select One</option>
+                                    <option value='MagicKingdom'>Magic Kindgom</option>
+                                    <option value='AnimalKingdom'>Animal Kindgom</option>
+                                    <option value='HollywoodStudios'>Hollywood Studios</option>
+                                    <option value='Epcot'>Epcot</option>
+                                </select>
                                 <div className='dietary-checkbox'>
                                     <label htmlFor='meal'>Vegan</label>
                                     <input 
