@@ -30,7 +30,8 @@ const DummyMeals = [
         vegan: 'yes',
         vegetarian: 'yes',
         gluten_free: 'no',
-    },    {
+    },    
+    {
         id: 4,
         meal_name: 'Grilled Vegetable Skewer with Impossible™ Kefta',
         meal_description: 'Basmati Rice, Lentils, Smoked Eggplant Salad',
