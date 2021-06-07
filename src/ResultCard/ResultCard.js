@@ -9,14 +9,14 @@ function ResultCard(props) {
                 <p>{props.restaurant}
                     <br />
                     <br />{props.meal_name}
-                    <br />{props.description}
-                    <br />{props.location}
-                    <br />{props.park}
-                    <br />{props.price}
+                    <br />{props.meal_description}
+                    <br />{props.restaurant_name}
+                    <br />{props.meal_location}
+                    <br />${props.price}
                     <br />
-                    <br />Vegan: {props.vegan}
-                    <br />Vegetarian: {props.vegetarian}
-                    <br />Gluten Free: {props.gluten_free}
+                    <br />Vegan: {props.is_vegan}
+                    <br />Vegetarian: {props.is_vegetarian}
+                    <br />Gluten Free: {props.is_gluten_free}
                 </p>
             </div>
         </div>
