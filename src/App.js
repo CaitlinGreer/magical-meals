@@ -7,6 +7,7 @@ import './App.css'
 import Nav from './Nav/Nav' //NavBar
 import LandingPage from './LandingPage/LandingPage' //Home page containing header and footer
 import FindAMeal from './FindAMeal/FindAMeal' //meal search
+// import ResultsList from './ResultsList/ResultsList'
 import ContactPage from './ContactPage/ContactPage' //contact landing page
 import ContactForm from './ContactForm/ContactForm' //contact form
 
@@ -16,6 +17,7 @@ class App extends Component {
     super(props)
     this.state = {
       meals: [],
+      filteredMeals: []
     }
   }
 
@@ -34,6 +36,7 @@ class App extends Component {
       })
       .catch(error => {
         this.setState({ error })
+         
       })
   }
 
@@ -47,6 +50,8 @@ class App extends Component {
       meals: [...this.state.meals, meal]
     })
   }
+
+
 
 
   renderRoutes() {
@@ -78,7 +83,7 @@ class App extends Component {
   render() {
     const value = {
       meals: this.state.meals,
-      fetchMeals: this.fetchAllData
+      fetchMeals: this.fetchAllData,
     }
     return (
       <MealsContext.Provider value={value}>
