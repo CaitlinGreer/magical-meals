@@ -7,11 +7,10 @@ function ResultCard(props) {
     return (
         <div>
             <div className='meal-card'>
-                <p>{props.restaurant}
+                <p>{props.restaurant_name}
                     <br />
                     <br />{props.meal_name}
                     <br />{props.meal_description}
-                    <br />{props.restaurant_name}
                     <br />{props.meal_location}
                     <br />${props.price}
                     <br />

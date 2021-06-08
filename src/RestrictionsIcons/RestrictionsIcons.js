@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './RestrictionsIcons.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckSquare, faTimesCircle } from '@fortawesome/free-regular-svg-icons'
@@ -31,14 +32,14 @@ class RestrictionsIcons extends Component {
         }
 
         return (
-            <div>
-                <div>
+            <div className='icons-container'>
+                <div className='vegan'>
                     <br />Vegan: {isVeganImage}
                 </div>
-                <div>
+                <div className='vegetarian'>
                     <br />Vegetarian: {isVegetarianImage}
                 </div>
-                <div>
+                <div className='gluten-free'>
                     <br />Gluten Free: {isGlutenfreeImage}
                 </div>
 
