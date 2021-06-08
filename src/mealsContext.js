@@ -2,8 +2,8 @@ import React from 'react'
 
 const MealsContext = React.createContext({
     meals: [],
-    locations: [],
-    addMeals: () => {}
+    filteredMeals: [],
+    addMeals: () => {},
 })
 
 export default MealsContext
