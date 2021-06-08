@@ -1,4 +1,5 @@
 import React from 'react'
+import RestrictionsIcons from '../RestrictionsIcons/RestrictionsIcons'
 
 import './ResultCard.css'
 
@@ -14,10 +15,13 @@ function ResultCard(props) {
                     <br />{props.meal_location}
                     <br />${props.price}
                     <br />
-                    <br />Vegan: {props.is_vegan}
-                    <br />Vegetarian: {props.is_vegetarian}
-                    <br />Gluten Free: {props.is_gluten_free}
+                    
                 </p>
+                <RestrictionsIcons 
+                    is_vegan={props.is_vegan}
+                    is_vegetarian={props.is_vegetarian}
+                    is_glutenfree={props.is_glutenfree}
+                />
             </div>
         </div>
     )
