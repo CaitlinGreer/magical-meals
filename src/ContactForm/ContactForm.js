@@ -110,7 +110,7 @@ class ContactForm extends Component {
             price: price.value,
             is_vegan: is_vegan,
             is_vegetarian: is_vegetarian,
-            is_glutenfree: is_glutenfree
+            is_glutenfree: is_glutenfree,
         }
 
         const requestOptions = {
@@ -120,7 +120,7 @@ class ContactForm extends Component {
         }
 
         fetch(`${config.API_ENDPOINT}/meals`, requestOptions)
-            .then(res => {
+                .then(res => {
                 if(!res.ok) {
                     throw new Error('Whoops!  Looks like something went wrong!  Try again later!')
                 }
@@ -191,9 +191,10 @@ class ContactForm extends Component {
                                     type='text' 
                                     id='price'
                                     name='price'
-                                    placeholder="$19.95"
+                                    placeholder="19.95"
                                     onChange={e => this.updatePrice(e.target.value)}
-                                    >    
+                                    >
+                                       
                                 </input>
 
                                 <div className='dietary-checkbox'>
