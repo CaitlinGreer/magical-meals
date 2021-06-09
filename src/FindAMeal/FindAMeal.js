@@ -27,7 +27,6 @@ class FindAMeal extends Component {
         this.setState({
             filteredMeals: filteredMeals
         })
-        console.log(filteredMeals)
     }
 
     render() {
