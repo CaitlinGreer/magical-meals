@@ -1,29 +1,29 @@
 .footer-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    background-color: #000;
-    color: white;   
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: white;
+    box-shadow: 4px 0 4px 0 rgba(0,0,0,.2);
+
 }
 
 .footer-container p {
-    padding-top: 10px;
     padding-left: 5px;
 }
 
-.footer-container ul {
+.footer-links {
     list-style: none;
     margin-top: 1%;
     padding-top: 5px;
     padding-right: 10px;
+    color: black;
+    font-size: 15px;
 }
 
-.footer-container a {
-    color: white;
-    font-size: 15px;    
+.github, .linked-in {
+    text-decoration: none;
+    color: black;
 }
 
 @media all and (min-width: 600px) {
@@ -35,4 +35,4 @@
     .footer-container a {
         font-size: 25px;
     }
-}
+}  
