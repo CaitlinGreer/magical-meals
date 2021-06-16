@@ -71,8 +71,3 @@ header {
     }
   }
   
-  @media all and (max-width: 400px) {
-    .magical, .leaf, .meals {
-       margin-top: -15px;
-    }
-  }
