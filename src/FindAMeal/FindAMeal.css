@@ -1,26 +1,136 @@
+.find-a-meal-container {
+    margin-top: -10%;
+    padding-bottom: 20%;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
 .page-heading {
+    font-family: 'Limelight', script;
     text-align: center;
     margin-top: 15%;
 }
 
 h2 {
-    text-align: center;
+    margin-top: -1%;    
 }
 
 .filter {
     padding-bottom: 1%;
 }
+/* Diet Filter Section*/
 
-.park-btns {
-    padding: 10px;
+.diet-filter-container {
+    margin-top: 10%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-.park-btn {
-    padding: 5px;
-    margin: 2px;
+.diet-filter-label {
+    font-size: 20px;
+    margin-top: 1.5%;
+    padding-right: 2px;
+}
+/* Filter buttons */
+.park-btns, .diet-filter-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     
 }
 
+.park-btn, .diet-filter-btn {
+    display: flex;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 2px;
+    width: 80px;
+    height: 80px;
+    background-color: lightblue;
+
+    cursor: pointer;
+	position: relative;
+	border: 1px solid #012880;
+	background-image: linear-gradient(-180deg, #99e2b4 0%, #41b3a0 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+							0 -0.25rem 1.5rem rgb(3, 110, 84) inset,
+							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
+							0 0.25rem 0.5rem 0 rgb(70, 207, 161) inset;
+}
+
+.park-btn span {
+	color: transparent;
+	background-image: linear-gradient(0deg, #82eec5 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+}
+
+.park-btn::before {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+}
+
+.park-btn::after {
+	content: "";
+	display: block;
+	height: 0.25rem;
+	position: absolute;
+	bottom: 0.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 7.5rem);
+	background: #fff;
+	border-radius: 100%;
+	
+	filter: blur(1px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
+
+}
+img {
+    text-align: center;
+    max-height: 40px;
+    max-width: 40px;
+    
+}
+.ak-image {
+    height: 60px;
+    width: auto;
+}
+
+.diet-filter-btn {
+    height: 40px;
+    width: 80px;
+}
+
+.all-park-btn{
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    margin: 2px;
+    width: 80px;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+}
 .results-container {
     display: flex;
     flex-direction: row;
@@ -28,4 +138,11 @@ h2 {
     justify-content: space-evenly;
     align-items: flex-start;
 
+}
+
+@media all and (min-width: 700px) {
+    .park-btns {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
