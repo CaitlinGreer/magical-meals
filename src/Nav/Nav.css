@@ -1,23 +1,27 @@
+/* @import url("https://fontlibrary.org//face/waltograph");
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #000;
+    align-items: bottom;
+    background-color: white;
     position: fixed;
     width: 100%;
-    height: auto;
+    height: 10%;
     top: 0;
-
+    z-index: 1;
   }
   
-  .nav-link-header {
+  .nav-link-header, .nav-link-header:hover, .nav-link-header:visited {
+    font-family: "waltograph";
     align-self: start;
     padding-top: 20px;
-    padding-left: 10px;
-    color: white;
-    font-size: 35px;
+    padding-right: 10px;
+    color: black;
+    font-size: 55px;
     text-decoration: none;
     white-space: nowrap;
+    margin: 0;
     
 }
   .nav-links {
@@ -30,6 +34,158 @@
   a, a:hover, a:visited {
     text-decoration: none;
     padding-left: 15px;
-    color: white;
+    color: blue;
+  } */
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap'); 
+
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    z-index: 1;
+   
+  }
+  
+  nav {
+    width: 200px;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-clip-path: circle(24px at 30px 24px);
+    clip-path: circle(24px at 32px 24px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+  }
+  
+  nav:hover {
+    background: lightblue;
+    border-radius: 5px;
+    height: 225px;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.75s;
+    transition-duration: 0.75s;
+    -webkit-clip-path: circle(390px at 225px 24px);
+    clip-path: circle(390px at 150px 24px);
+  }
+  
+  .nav-link {
+    display: block;
+    line-height: 50px;
+    padding: 0 10px;
+    color: inherit;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .nav-link:hover { background: #ffe082; }
+  
+  .nav-link:active { background: #ffca28; }
+  
+  .navicon {
+    padding: 30px 15px;
+    cursor: pointer;
+    -webkit-transform-origin: 32px 24px;
+    -ms-transform-origin: 32px 24px;
+    transform-origin: 32px 24px;
+  }
+  
+  .navicon div {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+  }
+  
+  .navicon div:before,
+  .navicon div:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+    position: absolute;
+  }
+  
+  .navicon div:before { top: -7px; }
+  
+  .navicon div:after { top: 7px; }
+
+  /* MM logo */
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10%;
+    text-decoration: none;
+    font-size: 30px;
+    
   }
 
+  .magical {
+    padding-right: 6px;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+  } 
+
+  .leaf {
+    font-size: 20px;
+    color: green;
+  }
+
+  .meals {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 28px;
+    font-family: 'Limelight', cursive;
+    color: black;
+  } 
+  
+@media all and (min-width: 600px) {
+  .logo {
+    margin-top: .5px;
+  }
+  .magical {
+    font-size: 45px;
+   
+  }
+  .leaf {
+    font-size: 40px;
+    
+  }
+  .meals {
+    margin-top: 3px;
+    font-size: 40px;
+    padding-right: 5px;
+  }
+}
+
+@media all and (max-width: 450px) {
+.logo {
+  margin-top: -1px;
+}
+.leaf, .meals {
+  margin-top: 3px;
+}
+
+.leaf {
+  margin-top: 7px;
+}
+
+.logo{
+  margin-top: 1px;
+}
+  .nav-container{
+    height: 50px;
+  }
+}
