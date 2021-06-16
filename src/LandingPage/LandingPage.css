@@ -1,5 +1,6 @@
 .home-page-container{
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    /* margin-top: -20px; */
 }
 
 .main-page-container, .welcome-info {
@@ -8,15 +9,43 @@
 }
 
 .welcome-info {
-    border: 1px solid black;
-    background-color: lightblue;
+    border-radius: 5px;
     padding: 5%;
-    margin-top: 55px;
+    margin-top:10%;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 15%;
+    
+
+    background: linear-gradient(269deg, #ffffff, #e1e1e1, #e6f2d0, #d0ebf2);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
 }
 
-h3 {
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+
+.info-heading {
+    font-family: 'Limelight', cursive;
     font-size: 25px;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
 }
