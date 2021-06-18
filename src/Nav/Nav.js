@@ -10,18 +10,6 @@ import './Nav.css'
 class Nav extends Component {
     render() {
         return (
-            // <nav className='navicon'>
-
-            //     <ul className='nav-links'>
-            //         <li>
-            //             <Link to='/find-meal'>Find A Meal</Link>
-            //         </li>
-            //         <li>
-            //             <Link to='/contact'>Contact Us</Link>
-            //         </li>
-            //     </ul>
-            //     {/* <h1><Link className='nav-link-header' to={'/'}>Magical Meals</Link></h1> */}
-            // </nav>
             <div className='nav-container'>
                 <nav>
                     <div className="navicon">
