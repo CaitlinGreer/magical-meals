@@ -13,7 +13,7 @@
   margin: 0 auto;
   width: 100%;
   z-index: 1; 
-    background: linear-gradient(269deg, #ffffff, #e1e1e1, #e6f2d0, #d0ebf2);
+    background: linear-gradient(269deg, #e1e1e1, #e6f2d0, #d0ebf2);
     background-size: 800% 800%;
 
     -webkit-animation: AnimationName 20s ease infinite;
