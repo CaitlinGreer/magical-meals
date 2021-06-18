@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLeaf, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { faLeaf, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import mickey from './mickey-icon.png'
 
 import './Header.css'
 
@@ -19,8 +20,9 @@ class Header extends Component {
                     <br />
                     With The Ingredients Your Body Wants</h2>
                 </header>
-                <a href='#main-page-container' className='arrow-icon'>
-                    <FontAwesomeIcon icon={faChevronDown}  />
+                <a href='#main-page-container' className='down-icon'>
+                <img src={mickey} alt='mickey ears'  className='mickey'/>
+                <FontAwesomeIcon icon={faCaretDown} className='arrow' />
                 </a>
             </div>
         )
