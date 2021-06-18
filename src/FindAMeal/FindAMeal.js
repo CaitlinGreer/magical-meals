@@ -17,6 +17,7 @@ class FindAMeal extends Component {
             meals: [],
             filteredMeals: [],
             filteredByDiet: [],
+            
         }
     }
 
@@ -32,36 +33,33 @@ class FindAMeal extends Component {
             filteredMeals = this.context.meals.filter(meal => meal.meal_location === e.target.value)
         }
         this.setState({
-            filteredMeals: filteredMeals
+            filteredMeals: filteredMeals,
+            
         })
     }
 
     handleDietFilter = (e) => {
         let filteredByDiet
         let filteredMeals = this.state.filteredMeals
-        console.log(filteredMeals, 'state')
+        
+        
 
-        if (e.target.value === 'vegan') {
+                  
+        if (e.target.value === 'vegan' ) {
             filteredByDiet = filteredMeals.filter(meal => meal.is_vegan === true)
-            console.log('vegan', filteredByDiet)
-
         }
         if (e.target.value === 'vegetarian') {
             filteredByDiet = filteredMeals.filter(meal => meal.is_vegetarian === true)
-            console.log('vegetarian', filteredByDiet)
-
         }
-        if (e.target.value === 'glutenfree') {
+        if (e.target.value === 'glutenfree' ) {
             filteredByDiet = filteredMeals.filter(meal => meal.is_glutenfree === true)
-            console.log('glutenfree', filteredByDiet)
         }
         this.setState({
-            filteredMeals: filteredByDiet
+            filteredMeals: filteredByDiet,
+            
         })
+        
     }
-
-
-
 
 
     render() {
@@ -73,40 +71,44 @@ class FindAMeal extends Component {
                     <h1 className='page-heading'>Find Your Meal</h1>
                     <h2>Choose Your Location To Get Started</h2>
                     <div className='park-selection-container'>
-                        {/* <label htmlFor='location'>Choose A Location</label> */}
                         <div className='park-btns'>
 
-                            <button className='all-park-btn' value='all' onClick={this.handleLocationFilter}>All</button>
+                            <button className='all-park-btn' value='all' onClick={this.handleLocationFilter}>Show All</button>
                             <button className='park-btn' value='Magic Kingdom' onClick={this.handleLocationFilter}>
-                                <span><img src={MK} alt='animal kingdom logo' /></span>
+                                <img src={MK} alt='magic kingdom logo' className='mk-image' />
                                 Magic Kingdom
                             </button>
                             <button className='park-btn' value="Epcot" onClick={this.handleLocationFilter}>
-                                <span><img src={Epcot} alt='animal kingdom logo' /></span>
+                                <img src={Epcot} alt='animal kingdom logo' />
                                 Epcot
                             </button>
                             <button className='park-btn' value="Hollywood Studios" onClick={this.handleLocationFilter}>
-                                <span><img src={HS} alt='animal kingdom logo' /></span>
+                                <img src={HS} alt='animal kingdom logo' />
                                 Hollywood Studios
                             </button>
                             <button className='park-btn' value='Animal Kingdom' onClick={this.handleLocationFilter}>
-                                <span><img className='ak-image' src={AK} alt='animal kingdom logo' /></span>
+                                <img className='ak-image' src={AK} alt='animal kingdom logo'/>
                                 Animal Kingdom
                             </button>
                         </div>
 
                     </div>
-                    <div className='diet-filter-container'>
+                    {/* <div className='diet-filter-container'>
                         <label htmlFor='diet-filter-label' className='diet-filter-label'>Filter By:</label>
                         <div className='diet-filter-btns'>
-                            <button className='diet-filter-btn' value='vegan' onClick={this.handleDietFilter}>Vegan</button>
-                            <button className='diet-filter-btn' value='vegetarian' onClick={this.handleDietFilter}>Vegetarian</button>
-                            <button className='diet-filter-btn' value='glutenfree' onClick={this.handleDietFilter}>Gluten Free</button>
+                            <label htmlFor='is_vegan'>Vegan</label>
+                            <input type="checkbox" className='diet-filter-btn' value='vegan' onChange={this.handleDietFilter}></input>
+                            
+                            <label htmlFor='is_vegan'>Veg</label>
+                            <input type="checkbox" className='diet-filter-btn' value='vegetarian' onChange={this.handleDietFilter}></input>
+                            
+                            <label htmlFor='is_vegan'>GF</label>
+                            <input type="checkbox" className='diet-filter-btn' value='glutenfree' onChange={this.handleDietFilter}></input>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
-                <div className='result-card-list'>
+                <div className='result-card-list' >
                     <section >
                         <ul className='results-container' aria-live='polite'>
                             {sortedMeals.map(meal =>
