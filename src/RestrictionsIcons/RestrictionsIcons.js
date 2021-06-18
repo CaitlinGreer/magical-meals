@@ -11,38 +11,37 @@ class RestrictionsIcons extends Component {
         let isGlutenfreeImage = ''
 
         if (this.props.is_vegan === true) {
-            isVeganImage = <FontAwesomeIcon icon={faCheckSquare} alt='true' />
+            isVeganImage = <FontAwesomeIcon icon={faCheckSquare} alt='true' className='check' />
         } 
         if (!this.props.is_vegan) {
-            isVeganImage = <FontAwesomeIcon icon={faTimesCircle} alt='false' />
+            isVeganImage = <FontAwesomeIcon icon={faTimesCircle} alt='false' className='x'/>
         }
 
         if (this.props.is_vegetarian === true) {
-            isVegetarianImage = <FontAwesomeIcon icon={faCheckSquare} alt='true' />
+            isVegetarianImage = <FontAwesomeIcon icon={faCheckSquare} alt='true' className='check'/>
         } 
         if (!this.props.is_vegetarian) {
-            isVegetarianImage = <FontAwesomeIcon icon={faTimesCircle} alt='false' />
+            isVegetarianImage = <FontAwesomeIcon icon={faTimesCircle} alt='false' className='x'/>
         }
 
         if (this.props.is_glutenfree === true) {
-            isGlutenfreeImage = <FontAwesomeIcon icon={faCheckSquare} alt='true' />
+            isGlutenfreeImage = <FontAwesomeIcon icon={faCheckSquare} alt='true' className='check'/>
         } 
         if (!this.props.is_glutenfree) {
-            isGlutenfreeImage = <FontAwesomeIcon icon={faTimesCircle} alt='false' />
+            isGlutenfreeImage = <FontAwesomeIcon icon={faTimesCircle} alt='false' className='x'/>
         }
 
         return (
             <div className='icons-container'>
                 <div className='vegan'>
-                    <br />Vegan: {isVeganImage}
+                    <br />Vegan:  {isVeganImage}
                 </div>
                 <div className='vegetarian'>
-                    <br />Vegetarian: {isVegetarianImage}
+                    <br />Vegetarian:  {isVegetarianImage}
                 </div>
                 <div className='gluten-free'>
-                    <br />Gluten Free: {isGlutenfreeImage}
+                    <br />Gluten Free:  {isGlutenfreeImage}
                 </div>
-
             </div>
         )
     }
