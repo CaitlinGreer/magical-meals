@@ -22,7 +22,7 @@ class LandingPage extends Component {
                             gluten free diets can often times be difficult.
                     </p>
                             <p>Magical Meals is here to help simplify that process and make it easy to find
-                        the food you love without sacrificing any of the magic.  Get started by clicking <Link to='/find-meal'>here</Link> or on Find A Meal above!
+                        the food you love without sacrificing any of the magic.  Get started by clicking <Link to='/find-meal'>here</Link> or on Find A Meal in the menu above!
                     </p>
                         </div>
 
