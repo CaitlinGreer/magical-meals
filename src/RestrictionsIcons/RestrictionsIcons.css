@@ -4,5 +4,28 @@
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    align-items: flex-end;
+    align-content: flex-end;
+    border-radius: 20px 0px 20px 0px;
+    margin-top: 20px;
+    margin-bottom: -1%;
+}
+
+.vegan, .vegetarian, .gluten-free {
+    margin-top: -15px;
+    font-size: 13px;
+}
+
+.check {
+    color: rgb(4, 165, 84);
+    font-size: 15px;
+}
+
+.x {
+    color: rgb(143, 3, 3);
+}
+
+@media all and (min-width: 600px) {
+    .vegan, .vegetarian, .gluten-free {
+        font-size: 20px;
+    }
 }
