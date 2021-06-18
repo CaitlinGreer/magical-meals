@@ -64,9 +64,10 @@
   }
   
   nav:hover {
-    background: lightblue;
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 5px;
     height: 225px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     -webkit-transition-duration: 0.75s;
@@ -77,6 +78,8 @@
   
   .nav-link {
     display: block;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
     line-height: 50px;
     padding: 0 10px;
     color: inherit;
@@ -87,9 +90,9 @@
     user-select: none;
   }
   
-  .nav-link:hover { background: #ffe082; }
+  .nav-link:hover { background: #d0ebf2; }
   
-  .nav-link:active { background: #ffca28; }
+  .nav-link:active { background: rgb(127, 187, 214); }
   
   .navicon {
     padding: 30px 15px;
@@ -151,9 +154,9 @@
     color: black;
   } 
   
-@media all and (min-width: 600px) {
+@media all and (min-width: 700px) {
   .logo {
-    margin-top: .5px;
+    margin-top: .5%;
   }
   .magical {
     font-size: 45px;
@@ -167,6 +170,10 @@
     margin-top: 3px;
     font-size: 40px;
     padding-right: 5px;
+  }
+
+  .nav:hover {
+    width: 15%;
   }
 }
 
