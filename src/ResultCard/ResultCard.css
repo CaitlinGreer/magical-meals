@@ -1,10 +1,82 @@
-.meal-card {
+.individual-card {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
+    width: 300px;
+    height: auto;
     align-items: right;
-    background: lightblue;
-    width: 350px;
+    background-color: #f7f7f7;
+    border: 1px lightgrey solid;
+    background-image: linear-gradient(-180deg, #f7f7f7 0%, #c2d2db 100%);
+    color: black;
+    position: relative;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+  
+}
+
+.location-restaurant-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1%;
+}
+
+.mealname-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.price-box {
+    display: flex;
+    justify-content: flex-end;
+}
+.location {
+    font-size: 18px;
+    font-family: 'Limelight', script;
+    padding-bottom: 1px;
+}
+
+.restaurant-name {
+    font-size: 16px;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 2%;
+    font-size: 14px;
+    text-align: start;
+    
+}
+
+
+@media all and (min-width: 700px){
+    .individual-card {
+        width:  600px;
+    }
+
+    .location {
+        font-size: 25px;
+    }
+
+    .restaurant-name {
+        font-size: 23px;
+    }
+
+    .mealname-price {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 18px;
+        margin-bottom: 5%;
+    }
 }
