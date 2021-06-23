@@ -21,6 +21,10 @@ class FindAMeal extends Component {
         }
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    
     static contextType = MealsContext
 
     handleLocationFilter = (e) => {

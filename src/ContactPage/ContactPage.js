@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom'
 import './ContactPage.css'
 
 class ContactPage extends Component {
-  
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    
     render() {
         return(
             <div className="contact-container">

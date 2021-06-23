@@ -6,6 +6,10 @@ import Header from './Header/Header'
 import Footer from './Footer/Footer'
 
 class LandingPage extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0);
+    }
+    
     render() {
         return (
             <div>
