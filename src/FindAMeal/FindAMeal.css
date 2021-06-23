@@ -1,5 +1,5 @@
 .find-a-meal-container {
-    padding-bottom: 50%;
+    padding-bottom: 120%;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
 }
@@ -7,62 +7,24 @@
 .page-heading {
     font-family: 'Limelight', script;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 20%;
 }
 
-h2 {
-    margin-top: 8%;    
+.find-meal-subheading {
+    margin-top: -5%;
 }
 
 .filter {
     padding-bottom: 1%;
 }
-/* Diet Filter Section*/
 
-.diet-filter-container {
-    margin-top: 5%;
-    margin-right: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.diet-filter-label {
-    font-size: 20px;
-    margin-top: 1.5%;
-    padding-right: 2px;
-}
-
-/* .diet-filter-btns {
-    display: flex;
-    flex-direction: row;
-}
-.diet-filter-btn {
-    margin: 2px;
-    height: 40px;
-    width: 80px;
-    font-size: 10px;
-    pointer-events: all;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f7f7f7;
-    border: 1px lightgrey solid;
-    background-image: linear-gradient(-180deg, #f7f7f7 0%, #e7e7e7 100%);
-    color: black;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
-} */
-
-/* park selection buttons */
-.park-btns, .diet-filter-btns {
+.park-btns {
+    margin-top: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
 }
+
 .park-btn, .all-park-btn {
     font-family: 'Quicksand', sans-serif;
     font-size: 10px;
@@ -104,143 +66,37 @@ h2 {
   }
 
   img {
-      pointer-events: all;
-  }
-
-  /* .button:before {
-    content: "";
-    display: block;
-    background: #fff;
-    border-top: 2px solid #ddd;
-    position: absolute;
-    top: -18px;
-    left: -18px;
-    bottom: -18px;
-    right: -18px;
-    z-index: -1;
-    border-radius: 50%;
-    box-shadow: inset 0px 8px 48px #ddd;
-  }
-
-  .park-btns button:before {
-    content: "";
-    display: block;
-    background: #fff;
-    border-top: 2px solid #ddd;
-    position: absolute;
-    top: -18px;
-    left: -18px;
-    bottom: -18px;
-    right: -18px;
-    z-index: -1;
-    border-radius: 50%;
-    box-shadow: inset 0px 8px 48px #ddd;
-  } */
-
-/* .park-btn, .diet-filter-btn {
-    display: flex;
-    border: 1px solid lightblue;
-    border-radius: 10px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    margin: 2px;
-    width: 80px;
-    height: 80px;
-    background-color: lightblue;
-
-    cursor: pointer;
-	position: relative;
-	border: 1px solid #012880;
-	background-image: linear-gradient(-180deg, #99e2b4 0%, #41b3a0 100%);
-	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
-							0 -0.25rem 1.5rem rgb(3, 110, 84) inset,
-							0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
-							0 0.25rem 0.5rem 0 rgb(70, 207, 161) inset;
-}
-
-.park-btn span {
-	color: transparent;
-	background-image: linear-gradient(0deg, #82eec5 0%, #FEFAFD 100%);
-	-webkit-background-clip: text;
-	background-clip: text;
-	filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
-}
-
-.park-btn::before {
-	content: "";
-	display: block;
-	height: 0.25rem;
-	position: absolute;
-	top: 0.5rem;
-	left: 50%;
-	transform: translateX(-50%);
-	width: calc(100% - 7.5rem);
-	background: #fff;
-	border-radius: 100%;
-	
-	opacity: 0.7;
-	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
-}
-
-.park-btn::after {
-	content: "";
-	display: block;
-	height: 0.25rem;
-	position: absolute;
-	bottom: 0.75rem;
-	left: 50%;
-	transform: translateX(-50%);
-	width: calc(100% - 7.5rem);
-	background: #fff;
-	border-radius: 100%;
-	
-	filter: blur(1px);
-	opacity: 0.05;
-	background-image: linear-gradient(-270deg, rgba(255,255,255,0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255,255,255,0.00) 100%);
-
-} */
-img {
     text-align: center;
     max-height: 30px;
     max-width: 30px;
-    
-}
-/* .ak-image . {
-    height: 60px;
-    width: auto;
-} */
+  }
 
-
-
-/* .all-park-btn{
-    width: 80px;
-    height: 80px;
-    padding: 5px;
-    margin: 2px;
-    width: 80px;
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 10px;
-} */
 .results-container {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     align-items: center;
-
 }
+
+
 
 @media all and (min-width: 600px) {
     .find-a-meal-container {
         margin-top: -20%;
     }
 
+    .find-meal-subheading {
+        margin-top: -10%;
+    }
+
+    .result-card-list {
+        margin-top: 5%;
+    }
+
     .park-btns {
         margin-left: 5%;
         margin-right: 5%;
+        margin-top: 5%;
     }
 
     .park-btn, .all-park-btn {
@@ -261,6 +117,13 @@ img {
         width: 50px;
     }
 
+    .diet-filter-label {
+        font-size: 17px;
+    }
+
+    .diet-filter-dropdown {
+        font-size: 17px;
+    }
 }
 
 @media all and (max-width: 400px) {
