@@ -112,7 +112,7 @@
 @media all and (min-width: 600px) {
     .contact-form-container {
         height: 150vh;
-        margin-top: -10%;
+        margin-top: -15%;
     }
 
     .contact-form {
