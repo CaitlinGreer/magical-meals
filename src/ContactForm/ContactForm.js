@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import config from '../config'
 import MealsContext from '../mealsContext'
+import ValidationError from '../ValidationError'
 
 import './ContactForm.css'
 
@@ -97,6 +98,31 @@ class ContactForm extends Component {
         })
     }
     
+    //FORM VALIDATORS
+    validateParkSelection() {
+        const parkSelection = this.state.meal_location.value.trim()
+        if (parkSelection === 'null' ) {
+            return '*Park Selection Is Required'
+        }
+    }
+    validateInput() {
+        const restaurantName = this.state.restaurant_name.value.trim() 
+        if (restaurantName.length === 0) {
+            return '*Field Is Required'
+        }
+    }
+
+    validatePrice() {
+        const price = this.state.price.value.trim()
+        if (isNaN(price)) {
+            return 'input must be a number'
+        }
+    }
+
+
+
+
+    
     
 
     handleSubmit = event => {
@@ -145,12 +171,13 @@ class ContactForm extends Component {
                         <fieldset className='contact-form-fieldset'>
                             <label htmlFor='meal-location' className='text-input-label'>Location:</label>
                                 <select onChange={e => this.updateMealLocation(e.target.value)} className='meal-location-dropdown'>
-                                    <option value='select-one' defaultValue>Select One</option>
+                                    <option value='null' defaultValue>Select One</option>
                                     <option value='Magic Kingdom'>Magic Kindgom</option>
                                     <option value='Animal Kingdom'>Animal Kindgom</option>
                                     <option value='Hollywood Studios'>Hollywood Studios</option>
                                     <option value='Epcot'>Epcot</option>
-                                </select>                            
+                                </select> 
+                                <ValidationError message={this.validateParkSelection()}/>                           
                                 <label htmlFor='restaurant-name' className='text-input-label'>Restaurant Name:</label>
                                 <input
                                     className='text-input' 
@@ -161,7 +188,8 @@ class ContactForm extends Component {
                                     onChange={e => this.updateRestaurantName(e.target.value)}
                                     required
                                     >    
-                                </input>                                
+                                </input>     
+                                <ValidationError message={this.validateInput()}/>                           
                                 <label htmlFor='meal-name' className='text-input-label'>Meal Name:</label>
                                 <input
                                     className='text-input' 
@@ -173,6 +201,7 @@ class ContactForm extends Component {
                                     required
                                     >    
                                 </input>
+                                <ValidationError message={this.validateInput()}/>
                                 <label htmlFor='meal-descritpion' className='text-input-label'>Meal Description:</label>
                                 <textarea
                                     className='description-text-input' 
@@ -184,17 +213,23 @@ class ContactForm extends Component {
                                     required
                                     >    
                                 </textarea>
+                                <ValidationError message={this.validateInput()}/>
                                 <label htmlFor='price' className='text-input-label'>Price:</label>
-                                <input
-                                    className='text-input' 
-                                    type='text' 
-                                    id='price'
-                                    name='price'
-                                    placeholder="19.95"
-                                    onChange={e => this.updatePrice(e.target.value)}
-                                    >
-                                       
-                                </input>
+                                <div className='price-dollar-container'>
+                                    <span className='dollar'>$</span>
+                                    <input
+                                        className='text-input' 
+                                        type='number' 
+                                        id='price'
+                                        name='price'
+                                        placeholder="0.00"
+                                        onChange={e => this.updatePrice(e.target.value)}
+                                        >
+                                        
+                                    </input> 
+                                    <ValidationError message={this.validatePrice()}/>                                   
+                                </div>
+
 
                                 <div className='dietary-checkbox'>
                                     <label htmlFor='is_vegan'>Vegan</label>

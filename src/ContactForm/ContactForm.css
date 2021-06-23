@@ -1,5 +1,5 @@
 .contact-form-container {
-    height: 100vh;
+    height: 150vh;
     margin-top: -20px;
     display: flex;
     flex-direction: column;
@@ -46,6 +46,19 @@
     border: transparent;
     border-radius: 20px 0px 20px 0px;
     font-family: 'Quicksand', sans-serif;
+    
+}
+.price-dollar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.dollar {
+    margin-top: 8px;
+}
+
+.text-input::before {
+    content: '$';
 }
 
 .description-text-input {
