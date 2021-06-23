@@ -1,5 +1,5 @@
 .contact-container {
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -57,6 +57,11 @@
 
 @media all and (min-width: 600px) {
     .contact-container {
-        margin-top: -20%;
+        margin-top: -10%;
+    }
+
+    .contact-subinfo {
+        margin-top: -5%;
+
     }
 }

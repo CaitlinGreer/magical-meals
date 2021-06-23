@@ -66,11 +66,9 @@
     margin-left: -5%;
     font-weight: bold;
 }
-
 .park-options {
     padding: 5px;
 }
-
 .submit-button {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
@@ -101,7 +99,7 @@
 @media all and (min-width: 600px) {
     .contact-form-container {
         height: 150vh;
-        margin-top: -20%;
+        margin-top: -10%;
     }
 
     .contact-form {
