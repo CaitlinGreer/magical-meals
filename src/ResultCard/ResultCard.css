@@ -14,7 +14,6 @@
     position: relative;
     border-radius: 20px 0px 20px 0px;
     box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
-  
 }
 
 .location-restaurant-name {
@@ -31,13 +30,13 @@
     padding-top: 5%;
     font-weight: bold;
     font-size: 15px;
-
 }
 
 .price-box {
     display: flex;
     justify-content: flex-end;
 }
+
 .location {
     font-size: 18px;
     font-family: 'Limelight', script;
@@ -54,7 +53,6 @@
     margin-top: 2%;
     font-size: 14px;
     text-align: start;
-    
 }
 
 
