@@ -1,46 +1,51 @@
-.main-page-container, .welcome-info {
-    padding: 5px;
-    background-color: white;
+.main-page-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 15%;
+    padding: 2px;
 }
 
-.welcome-info {
-    border-radius: 5px;
+.welcome-info, .share-info {
+    border-radius: 20px 0px 20px 0px;
     padding: 5%;
-    margin-top:10%;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 15%;
+    text-align: justify;
+    background-color: white;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+}
+
+.share-info {
+    margin-top:10%;
+}
+
+.share-info-container {
+    margin-top: -15%;
     
-
-    background: linear-gradient(269deg, #ffffff, #e1e1e1, #e6f2d0, #d0ebf2);
-    background-size: 800% 800%;
-    -webkit-animation: AnimationName 20s ease infinite;
-    -moz-animation: AnimationName 20s ease infinite;
-    animation: AnimationName 20s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 52%}
-    50%{background-position:100% 49%}
-    100%{background-position:0% 52%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 52%}
-    50%{background-position:100% 49%}
-    100%{background-position:0% 52%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 52%}
-    50%{background-position:100% 49%}
-    100%{background-position:0% 52%}
-}
-
+} 
 .info-heading {
     font-family: 'Limelight', cursive;
-    font-size: 25px;
+    font-size: 15px;
+    text-align: center;
 }
 
 p {
     font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    font-size: 12px;
+}
+
+@media all and (min-width: 600px) {
+    .main-page-container {
+        margin-top: 15%;
+        margin-bottom: -5%;
+    }
+    .info-heading {
+        font-size: 25px
+    }
+
+    p {
+        font-size: 20px;
+    }
 }
