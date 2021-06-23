@@ -24,8 +24,8 @@ class LandingPage extends Component {
                             </p>
 
                             <p>Magical Meals is here to help simplify that process and make it easy to find
-                            the food you love without sacrificing any of the magic.  Get started by clicking <Link to='/find-meal' className='p-link'>here</Link>
-                             or on Find A Meal in the menu above!
+                            the food you love without sacrificing any of the magic.  Get started by clicking <Link to='/find-meal' className='p-link'>here</Link> or
+                            on Find A Meal in the menu above!
                             </p>
                         </div>
 
@@ -33,8 +33,8 @@ class LandingPage extends Component {
                         <div className='share-info-container'>
                             <div className='share-info'>
                                 <h3 className='info-heading'>Help Us Help You!</h3>
-                                <p>If you know of a meal we missed head on over to our <Link to='/contact' className='p-link'>contact</Link>
-                                page and the meal you share will magically appear on our list!
+                                <p>If you know of a meal we missed head on over to our <Link to='/contact' className='p-link'>contact</Link> page
+                                 and the meal you share will magically appear on our list!
                                 </p>
                             </div>
                         </div>
