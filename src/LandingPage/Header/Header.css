@@ -6,22 +6,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     margin-left: 10%;
     margin-right: 10%;
         
 }
-
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 30vh;
-    background-color: transparent;
-    padding: 5%;
+.text1 {
+    padding-bottom: 5%;
 }
+.magical-header {
+    font-size: 45px;
+    padding-right: 6px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .leaf-header {
+    font-size: 30px;
+    color: green;
+  }
+
+  .meals-header {
+    padding-left: 3px;
+    font-size: 38px;
+    font-family: 'Limelight', cursive;
+  }
 
 .down-icon {
     display: flex;
@@ -43,22 +50,6 @@
     margin-top: -10px;
 }
 
-.magical-header {
-    padding-right: 6px;
-    font-family: 'Dancing Script', cursive;
-  }
-
-  .leaf-header {
-    font-size: 20px;
-    color: green;
-  }
-
-  .meals-header {
-    padding-left: 3px;
-    font-size: 28px;
-    font-family: 'Limelight', cursive;
-  }
-  
   .text2 {
     font-family: 'Quicksand', sans-serif;
   }
