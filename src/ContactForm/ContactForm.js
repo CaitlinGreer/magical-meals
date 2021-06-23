@@ -139,12 +139,11 @@ class ContactForm extends Component {
     render(){
         return (
             <div className="contact-form-container">
-                <h1 className='page-heading'>Contact Us</h1>
+                <h1 className='page-heading'>Add A Meal</h1>
                 <div >
                     <form onSubmit={e => this.handleSubmit(e)} className='contact-form'>
                         <fieldset className='contact-form-fieldset'>
-                            <legend>Share A Meal</legend>
-                                <label htmlFor='meal-location' className='text-input-label'>Location:</label>
+                            <label htmlFor='meal-location' className='text-input-label'>Location:</label>
                                 <select onChange={e => this.updateMealLocation(e.target.value)} className='meal-location-dropdown'>
                                     <option value='select-one' defaultValue>Select One</option>
                                     <option value='Magic Kingdom'>Magic Kindgom</option>
@@ -175,8 +174,8 @@ class ContactForm extends Component {
                                     >    
                                 </input>
                                 <label htmlFor='meal-descritpion' className='text-input-label'>Meal Description:</label>
-                                <input
-                                    className='text-input' 
+                                <textarea
+                                    className='description-text-input' 
                                     type='text' 
                                     id='meal-description'
                                     name='meal-description'
@@ -184,7 +183,7 @@ class ContactForm extends Component {
                                     onChange={e => this.updateMealDescritpion(e.target.value)}
                                     required
                                     >    
-                                </input>
+                                </textarea>
                                 <label htmlFor='price' className='text-input-label'>Price:</label>
                                 <input
                                     className='text-input' 
@@ -229,7 +228,10 @@ class ContactForm extends Component {
                                     >
                                     </input>
                                 </div>
-                            <button type='submit' className='submit-button'>Submit</button>
+                                <div className='submit-button-container'>
+                                    <button type='submit' className='submit-button'>Submit</button>
+                                </div>
+                            
                         </fieldset>
                         
                     </form>
