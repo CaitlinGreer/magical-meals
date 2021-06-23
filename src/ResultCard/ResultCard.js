@@ -17,12 +17,12 @@ function ResultCard(props) {
                     <div className='location'>{props.meal_location}</div>
                     <div className='restaurant-name'>{props.restaurant_name}</div>
                 </div>
+                
                 <div className='mealname-price'>
                     <div className='meal-name'>{props.meal_name}</div>
                     <div className='price'>${props.price}</div>
-
-                   
                 </div>
+
                 <div className='meal-description'>
                     <div className='description'>{props.meal_description}</div>
                 </div>
@@ -34,10 +34,7 @@ function ResultCard(props) {
                     is_glutenfree={props.is_glutenfree}
                 />
             </div>
-
-
         </div>
-
     )
 }
 

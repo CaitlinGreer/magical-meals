@@ -56,7 +56,6 @@ class FindAMeal extends Component {
                                 onClick={this.handleLocationFilter}>
                                     Show All
                             </button>
-
                             <button 
                                 className='park-btn' 
                                 value='Magic Kingdom' 
@@ -85,10 +84,9 @@ class FindAMeal extends Component {
                                     <img className='ak-image' src={AK} alt='animal kingdom logo' />
                                     Animal Kingdom
                             </button>
+                            
                         </div>
-
                     </div>
-
                 </div>
 
                 <div className='result-card-list' >
@@ -101,7 +99,6 @@ class FindAMeal extends Component {
                                 />
                             )}
                         </ul>
-
                     </section>
                 </div>
             </div>
