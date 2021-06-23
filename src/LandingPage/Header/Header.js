@@ -12,10 +12,11 @@ class Header extends Component {
                 <header className='container'>
                     <h1 className='text1'>
                         <span className='magical-header'>Magical</span> 
-                        <span className='magical-header2'>
+                        <span>
                             <FontAwesomeIcon icon={faLeaf} className='leaf-header' />
+                        </span>
                         <span className='meals-header'>MEALS</span>
-                        </span></h1>
+                    </h1>
                     <h2 className='text2'>Here to Help You Find The Disney World Food You Love 
                     <br />
                     With The Ingredients Your Body Wants</h2>
