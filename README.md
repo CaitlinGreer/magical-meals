@@ -28,6 +28,8 @@ Details:
 
 ### Find A Meal Page
 ![Find A Meal](src/images/MMFindAMeal.png)
+
+### Meal Results
 ![Meal Results](src/images/MMResultsList.png)
 
 ### Contact Page
