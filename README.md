@@ -18,7 +18,7 @@ Details:
 
 ## Check Out the Live Version:
 
-[Magical Meals](magical-meals-caitlingreer.vercel.app)
+[Magical Meals](https://magical-meals.vercel.app/)
 
 ## Screenshots
 
